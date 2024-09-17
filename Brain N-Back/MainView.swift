@@ -5,20 +5,57 @@
 //  Created by Вадим on 16.09.2024.
 //
 
+import ComposableArchitecture
 import SwiftUI
 
 struct MainView: View {
+    @Perception.Bindable
+    var store: StoreOf<MainReducer>
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        WithPerceptionTracking {
+            contentView
         }
-        .padding()
     }
-}
-
-#Preview {
-    MainView()
+    
+    private var contentView: some View {
+        VStack(alignment: .center, spacing: 0) {
+            ZStack {
+                Color.green
+                    .ignoresSafeArea()
+                HStack {
+                    Text("Brain N-Back")
+                        .bold()
+                        .font(.title2)
+                    Spacer()
+                    Image(systemName: "gearshape.fill")
+                        .font(.title)
+                    Image(systemName: "square.and.arrow.up")
+                        .font(.title)
+                }
+                .padding()
+            }
+            .frame(height: 60)
+            .foregroundStyle(.white)
+            
+            TabView {
+                NavigationView {
+                    Text("Screen 1")
+                }
+                
+                NavigationView {
+                    Text("Screen 2")
+                }
+                
+                NavigationView {
+                    Text("Screen 3")
+                }
+            }
+            .tabViewStyle(PageTabViewStyle())
+            
+//            Color.white
+//                .ignoresSafeArea()
+        }
+    }
+    
 }

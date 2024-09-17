@@ -12,6 +12,7 @@
 		7D2F41912C984B1B00793CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F41902C984B1B00793CAD /* Assets.xcassets */; };
 		7D2F41942C984B1B00793CAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F41932C984B1B00793CAD /* Preview Assets.xcassets */; };
 		7D2F419C2C984CFF00793CAD /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 7D2F419B2C984CFF00793CAD /* ComposableArchitecture */; };
+		7D2F419E2C98518400793CAD /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F419D2C98518400793CAD /* MainReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		7D2F418E2C984B1500793CAD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7D2F41902C984B1B00793CAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D2F41932C984B1B00793CAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D2F419D2C98518400793CAD /* MainReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				7D2F418C2C984B1500793CAD /* Brain_N_BackApp.swift */,
+				7D2F419D2C98518400793CAD /* MainReducer.swift */,
 				7D2F418E2C984B1500793CAD /* MainView.swift */,
 				7D2F41902C984B1B00793CAD /* Assets.xcassets */,
 				7D2F41922C984B1B00793CAD /* Preview Content */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D2F418F2C984B1500793CAD /* MainView.swift in Sources */,
+				7D2F419E2C98518400793CAD /* MainReducer.swift in Sources */,
 				7D2F418D2C984B1500793CAD /* Brain_N_BackApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
